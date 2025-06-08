@@ -10,7 +10,7 @@ const Page = () => {
           Terms of Service
         </h1>
         <p className="text-muted-foreground-subtle tracking-[-0.32px]">
-          Effective date: November 1, 2024
+          Effective date: March 1, 2025
         </p>
       </div>
 
