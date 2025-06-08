@@ -23,7 +23,7 @@ export default function Hero() {
           </p>
           <Button asChild className="mt-6 gap-1 md:mt-8 lg:mt-10">
             <Link href="/dashboard">
-              Get started in <10mins
+              Get started in under 10mins
               <ChevronRight className="size-4" />
             </Link>
           </Button>
