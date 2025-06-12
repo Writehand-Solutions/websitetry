@@ -19,20 +19,20 @@ const contactMethods = [
     title: 'Email',
     description:
       "Have a question or need help? Drop us an email, and we'll respond within 24 hours.",
-    contact: 'hello@relative.io',
+    contact: 'hello@productised.ai',
   },
   {
     icon: Phone,
     title: 'Phone',
     description:
       'Prefer to chat? Give us on live chat Monday–Friday, 9 AM–5 PM (PST).',
-    contact: '+1 (123) 456-7890',
+    contact: '',
   },
   {
     icon: Building,
     title: 'Office',
     description:
-      'Stop by our office @ Suite 12, 130 St Georges Bay Road, Parnell, Auckland',
+      'Stop by our office @ Level 1, 130 St Georges Bay Road, Parnell, Auckland',
     contact: (
       <Link
         href="https://maps.app.goo.gl/bAyzfRJqA7pTAMr27"
