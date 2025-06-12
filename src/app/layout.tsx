@@ -1,5 +1,4 @@
 import localFont from 'next/font/local';
-import Script from 'next/script';
 
 import type { Metadata } from 'next';
 
