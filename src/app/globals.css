@@ -7,11 +7,12 @@
 
 @theme {
   --font-inter: var(--font-inter);
+  --font-geist-sans: var(--font-geist-sans);
+  --font-geist-mono: var(--font-geist-mono);
 
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
   --color-foreground2: hsl(var(--foreground-2));
-
 
   --color-card: hsl(var(--card));
   --color-card-foreground: hsl(var(--card-foreground));
@@ -108,6 +109,15 @@
   body {
     font-family: var(--font-inter), sans-serif;
   }
+
+  /* Add utility classes for font switching */
+  .font-geist-sans {
+    font-family: var(--font-geist-sans), sans-serif;
+  }
+
+  .font-geist-mono {
+    font-family: var(--font-geist-mono), monospace;
+  }
 }
 
 @layer components {
@@ -193,4 +203,17 @@ body {
 }
 body {
   position: relative;
+}
+
+#commandbar-wrapper *,
+#commandbar-wrapper *:before,
+#commandbar-wrapper *:after,
+.commandbar-nudge-modal *,
+.commandbar-nudge-modal *:before,
+.commandbar-nudge-modal *:after,
+.commandbar-nudge-modal-mock *,
+.commandbar-nudge-modal-mock *:before,
+.commandbar-nudge-modal-mock *:after {
+  box-sizing: border-box;
+  font-family: var(--font-geist-sans), sans-serif;
 }

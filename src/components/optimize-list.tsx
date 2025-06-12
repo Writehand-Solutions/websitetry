@@ -12,25 +12,25 @@ import { cn } from '@/lib/utils';
 
 const OPTIMIZE_DATA = [
   {
-    title: 'Unified Scheduling',
+    title: 'Custom Styling',
     description:
-      'Keep all your appointments and events in sync with seamless cross-platform calendar connectivity.',
+      'Apply your own fonts, colours, domains, and logos across every product and page.',
     icon: CircleHelp,
-    image: '/images/homepage/optimize-1.png',
+    image: '/images/homepage/web-editor.png',
   },
   {
-    title: 'Insightful Performance',
+    title: 'Drag & Drop Simplicity',
     description:
-      'Get clear, real-time analytics tracking your progress, key milestones, focus hours, and completed tasks.',
+      'Assemble forms, quizzes, and output pages with intuitive blocks—no coding required.',
     icon: Volume2,
-    image: '/images/homepage/optimize-2.png',
+    image: '/images/homepage/workflow-builder.png',
   },
   {
-    title: 'Effortless Tool Integrations',
+    title: 'Easy Deployment',
     description:
-      'Link your favorite apps and services to streamline work without switching between platforms.',
+      'Share with you custom domain, or embed via Iframe. *New: Template sharing now added!',
     icon: Lightbulb,
-    image: '/images/homepage/optimize-3.png',
+    image: '/images/homepage/share-product.png',
   },
 ];
 
@@ -76,16 +76,14 @@ const OptimizeList = () => {
 
       {OPTIMIZE_DATA.map((item) => (
         <TabsContent key={item.title} value={item.title} className="mt-0">
-          <div className="flex flex-1 flex-col px-2 py-4 max-lg:border-x">
-            <DiagonalPattern className="h-5" />
+          <div className="flex flex-1 flex-col max-lg:border-x">
             <Image
               src={item.image}
               alt={item.title}
               width={1312}
               height={743.926}
-              className="my-2 rounded-md object-contain shadow-md lg:rounded-xl lg:shadow-lg dark:invert"
+              className="h-auto w-full object-contain shadow-md lg:shadow-lg dark:invert"
             />
-            <DiagonalPattern className="h-5" />
           </div>
         </TabsContent>
       ))}

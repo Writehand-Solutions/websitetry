@@ -33,24 +33,24 @@ const Navbar = () => {
       href: '#features',
       dropdownItems: [
         {
-          title: 'Smart Productivity',
-          href: '/#smart-productivity',
-          description: 'Boost your productivity with AI-powered insights',
+          title: 'Introducing AI Productisation',
+          href: '/#ai-productisation',
+          description: 'Launch expert-grade AI products that attract, engage, and convert — all in one seamless flow',
         },
         {
-          title: 'Adaptive Workflows',
-          href: '/#adaptive-workflows',
-          description: 'Customize and automate your work processes',
+          title: 'Hyper Personalisation',
+          href: '/#personalisation',
+          description: 'Let AI personalise every journey. From input to insight, your product evolves in real time',
         },
         {
-          title: 'Optimized Scheduling',
-          href: '/#optimized-scheduling',
-          description: 'Intelligent time management and scheduling',
+          title: 'Future-Proof Your Brand',
+          href: '/#your-brand',
+          description: 'Keep every pixel on-brand with custom styling, drag-and-drop layouts, and smart templates',
         },
         {
-          title: 'Accelerate Planning',
-          href: '/#accelerate-planning',
-          description: 'Strategic planning tools for faster execution',
+          title: 'Launch Your Product',
+          href: '/#create-product',
+          description: 'Go from blank canvas to fully branded AI experience in four quick steps—pick a blueprint, add questions and data, brand & automate, then publish and track',
         },
       ],
     },
@@ -67,13 +67,19 @@ const Navbar = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-1">
             <Image
+              src="/images/icon.png"
+              alt="icon"
+              width={32}
+              height={32}
+              className="dark:invert pr-1"
+            />
+            <Image
               src="/images/logo.svg"
               alt="logo"
-              width={32}
+              width={100}
               height={32}
               className="dark:invert"
             />
-            <span className="text-2xl leading-0 font-semibold">Relative</span>
           </Link>
 
           {/* Desktop Navigation */}

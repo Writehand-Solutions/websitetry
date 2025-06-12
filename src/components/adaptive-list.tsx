@@ -4,30 +4,30 @@ import Image from 'next/image';
 
 const DATA = [
   {
-    subTitle: 'Unified Scheduling',
-    title: 'Unified Scheduling',
+    subTitle: 'Control Design',
+    title: 'Custom AI Output Results Pages',
     description:
-      'Keep all your appointments and events in sync with seamless cross-platform calendar connectivity.',
+      'Create unique, high-context results pages on the fly with AI.',
     icon: 'CircleHelp',
-    image: '/images/homepage/adaptive-1.png',
+    image: '/images/homepage/custom-output.png',
   },
   {
-    subTitle: 'Insightful Performance',
-    title: 'Insightful Performance',
+    subTitle: 'Personalisation',
+    title: 'Personalisation at Scale',
     description:
-      'Get clear, real-time analytics tracking your progress, key milestones, focus hours, and completed tasks.',
+      'Tailor every journey with dynamic logic, custom values and AI-driven responses.',
     icon: 'Volume2',
-    image: '/images/homepage/adaptive-2.png',
+    image: '/images/homepage/personalisation.png',
   },
   {
-    subTitle: 'Effortless Tool Integrations',
-    title: 'Effortless Tool Integrations',
-    description:
-      'Link your favorite apps and services to streamline work without switching between platforms.',
+    subTitle: 'Analytics',
+    title: 'Insightful Product Analytics',
+    description: 'Track usage and conversion data, then refine with evidence.',
     icon: 'Lightbulb',
-    image: '/images/homepage/adaptive-3.png',
+    image: '/images/homepage/analytics.png',
   },
 ];
+
 const AdaptiveList = () => {
   return (
     <div className="items-center">
@@ -46,13 +46,13 @@ const AdaptiveList = () => {
             <p className="text-muted-foreground px-1 py-4 tracking-[-0.32px] lg:px-8">
               {item.description}
             </p>
-            <div className="border-t py-4 lg:px-2">
+            <div className="border-t pt-4">
               <Image
                 src={item.image}
                 alt={item.title}
                 width={416}
                 height={233}
-                className="rounded-md shadow-md lg:rounded-xl lg:shadow-lg dark:invert"
+                className="h-auto w-full rounded-none shadow-md lg:shadow-lg dark:invert"
               />
             </div>
           </div>

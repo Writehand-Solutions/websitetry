@@ -22,6 +22,7 @@ interface PricingPlan {
     yearly: number;
   };
   features: string[];
+  market: string;
 }
 
 interface ComparisonFeature {
@@ -39,83 +40,86 @@ interface FeatureSection {
 const pricingPlans: PricingPlan[] = [
   {
     icon: Rocket,
-    name: 'Basic plan',
+    name: 'Starter plan',
     price: {
-      monthly: 19,
-      yearly: 199,
+      monthly: 29,
+      yearly: 279,
     },
     features: [
-      'Basic task management tools',
-      'Calendar sync with limited integrations',
-      'Access to 1 dashboard for tracking tasks',
-      'Limited AI suggestions and insights',
-      'Basic support and community access',
+      '1 User',
+      '5 Products',
+      '1 Workspace',
+      'Unlimited Product Submissions',
+      '1,000 Starter Credits',
     ],
+    market: 'Solo pros & freelancers',
   },
   {
     icon: Briefcase,
     name: 'Business plan',
     price: {
-      monthly: 29,
-      yearly: 299,
+      monthly: 59,
+      yearly: 566,
     },
     features: [
-      'All Free Plan features, plus:',
-      'Unlimited task lists',
-      'Advanced calendar sync',
-      'AI-driven insights',
-      'Access to custom dashboards',
-      'Priority email support',
+      '3 Users',
+      '15 Products',
+      '3 Workspaces',
+      'Unlimited Product Submissions',
+      '1,500 Starter Credits',
+      'Custom Domain & Branding',
     ],
+    market: 'Small teams & growing knowledge workers',
   },
   {
     icon: Building,
     name: 'Enterprise plan',
     price: {
-      monthly: 49,
-      yearly: 499,
+      monthly: 99,
+      yearly: 950,
     },
     features: [
-      'All Pro Plan features, plus:',
-      'Dedicated account manager',
-      'Custom integrations',
-      'Real-time collaboration',
-      'Role-based permissions',
-      '24/7 priority support',
+      '5 Users',
+      '20 Products',
+      '5 Workspaces',
+      'Unlimited Product Submissions',
+      '2,000 Starter Credits',
+      'Custom Domain & Branding',
     ],
+    market: 'Agencies & consulting teams',
   },
 ];
 
 const comparisonFeatures: FeatureSection[] = [
   {
-    category: 'Core Tools',
+    category: 'AI',
     features: [
       {
-        name: 'Task Management',
+        name: 'AI Credits',
         basic: '10',
         business: '25',
         enterprise: 'Unlimited',
       },
       {
-        name: 'Calendar Sync',
+        name: 'AI Product Builder Credits',
         basic: true,
         business: true,
         enterprise: true,
       },
       {
-        name: 'Reminders',
+        name: 'AI Conversations',
         basic: true,
         business: true,
         enterprise: true,
       },
       {
-        name: 'Collaboration',
+        name: 'API Key Option',
         basic: false,
         business: true,
         enterprise: true,
       },
       {
-        name: 'Notifications',
+        name: 'Custom Domains and Branding',
         basic: false,
         business: false,
         enterprise: true,
@@ -123,69 +127,57 @@ const comparisonFeatures: FeatureSection[] = [
     ],
   },
   {
-    category: 'Productivity Insights',
+    category: 'AI Widgets (Coming soon)',
     features: [
       {
-        name: 'Analytics',
+        name: 'Conversations',
         basic: '10 25 Unlimited',
         business: '10 25 Unlimited',
         enterprise: '10 25 Unlimited',
       },
       {
-        name: 'Reports',
+        name: 'AI Widgets',
         basic: true,
         business: true,
         enterprise: true,
       },
       {
-        name: 'Time Tracking',
+        name: 'Custom Domains & Branding',
         basic: true,
         business: true,
-        enterprise: true,
-      },
-      {
-        name: 'Goal Tracking',
-        basic: false,
-        business: true,
-        enterprise: true,
-      },
-      {
-        name: 'Trends',
-        basic: false,
-        business: false,
         enterprise: true,
       },
     ],
   },
   {
-    category: 'Workflow Automation',
+    category: 'AI Forms & Landing Pages',
     features: [
       {
-        name: 'Task Automation',
+        name: 'Unlimited Landing Pages',
         basic: '10',
         business: '25',
         enterprise: 'Unlimited',
       },
       {
-        name: 'Recurring Tasks',
+        name: 'Unlimited Forms',
         basic: true,
         business: true,
         enterprise: true,
       },
       {
-        name: 'Integrations',
+        name: 'Page Builder Templates',
         basic: true,
         business: true,
         enterprise: true,
       },
       {
-        name: 'API Access',
+        name: 'Webhooks',
         basic: false,
         business: true,
         enterprise: true,
       },
       {
-        name: 'Workflow Templates',
+        name: 'Integrations (Soon)',
         basic: false,
         business: false,
         enterprise: true,
@@ -204,10 +196,10 @@ const Pricing = ({ withBorders = true }: { withBorders?: boolean }) => {
           className={
             withBorders ? '' : 'border-none lg:items-center lg:text-center'
           }
-          iconTitle="Spenders Lounge"
-          title="Pricing for everyone"
+          iconTitle="Affordable Pricing"
+          title="Deliver more value"
           icon={BadgeDollarSign}
-          description="Choose the Plan that Fits Your Productivity Needs"
+          description="Over-deliver on value, and reap the results. Pick a plan to get started."
         />
       </div>
 
@@ -283,7 +275,10 @@ const PricingCard = ({
 
       <FeatureList features={plan.features} />
 
-      <Button variant={index === 1 ? 'default' : 'secondary'} className="mt-12">
+      <Button
+        variant={index === 1 ? 'productised' : 'secondary'}
+        className="mt-12"
+      >
         Get started
       </Button>
     </div>
@@ -306,11 +301,12 @@ const PriceDisplay = ({
         {isMonthly ? '/mo' : '/yr'}
       </span>
     </div>
-    <p className="text-muted-foreground">
+    {/* <p className="text-muted-foreground">
       {isMonthly
         ? `or $${plan.price.yearly} yearly`
         : `or $${plan.price.monthly}/mo monthly`}
-    </p>
+    </p> */}
+    <p className="text-muted-foreground">{plan.market}</p>
   </>
 );
 
@@ -343,7 +339,12 @@ const PlanHeaders = ({ isMonthly }: { isMonthly: boolean }) => (
             </div>
             <PriceDisplay plan={plan} isMonthly={isMonthly} />
           </div>
-          <Button className="mt-auto">Get started</Button>
+          <Button
+            variant={index === 1 ? 'productised' : 'default'}
+            className="mt-auto"
+          >
+            Get started
+          </Button>
         </div>
       ))}
     </div>

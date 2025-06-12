@@ -12,47 +12,48 @@ import {
 } from 'lucide-react';
 
 import DiagonalPattern from '../diagonal-pattern';
-import SectionHeader from '../section-header';
+import TitleTag from '../title-tag';
+import { cn } from '@/lib/utils';
 
 const TIMELINE_ITEMS = [
   {
-    title: 'Get Organized',
+    title: 'Pick a Blueprint',
     description:
-      'Start strong by syncing your calendars and tools like Google Calendar, Trello, and Slack in one place.',
+      'Browse expert-designed AI Product templates or start from a blank canvas. Choose the structure that fits your workflow and skip the heavy lifting.',
     icon: LayoutList,
     image: {
-      src: '/images/homepage/accelerate-1.png',
+      src: '/images/homepage/blueprint_launch.svg',
       alt: 'Get Organized',
     },
   },
   {
-    title: 'Track Progress',
+    title: 'Add Questions & Data, Then Connect to AI',
     description:
-      'Monitor your performance with real-time dashboards and detailed analytics. Stay ahead with automated reports.',
+      'Write the client-facing questions, then upload any supporting materials (PDFs, spreadsheets, links). Every input helps the AI reflect your unique expertise.',
     icon: LocateFixed,
     image: {
-      src: '/images/homepage/accelerate-2.png',
+      src: '/images/homepage/openai_launch.svg',
       alt: 'Track Progress',
     },
     reverse: true,
   },
   {
-    title: 'Collaborate Seamlessly',
+    title: 'Design, Brand & Invite Team',
     description:
-      'Empower your team with shared dashboards and instant communication tools. Keep everyone aligned with integrated platforms.',
+      'Design your landing and AI Output pages, add your logo, fonts, and colours, and invite your team and clients to join in on the action!',
     icon: Users,
     image: {
-      src: '/images/homepage/accelerate-3.png',
+      src: '/images/homepage/members_launch.svg',
       alt: 'Collaborate Seamlessly',
     },
   },
   {
-    title: 'Integrate Seamlessly',
+    title: 'Publish, Share & Track',
     description:
-      'Integrate seamlessly across multiple platforms to enable smooth, automated task handovers.',
+      'Launch on a custom sub-domain (e.g., audit.yourbrand.com), share the link anywhere, and watch live analytics to refine and convert high-value leads.',
     icon: Cpu,
     image: {
-      src: '/images/homepage/accelerate-4.png',
+      src: '/images/homepage/usage_launch.svg',
       alt: 'Integrate Seamlessly',
     },
     reverse: true,
@@ -61,14 +62,14 @@ const TIMELINE_ITEMS = [
 
 const Accelerate = () => {
   return (
-    <section id="accelerate-planning" className="">
+    <section id="create-product" className="">
       <div className="border-b">
         <SectionHeader
-          iconTitle="Accelerate"
-          title="Accelerate your planning journey"
+          iconTitle="Launch"
+          title="From Idea to Live AI Product"
           icon={Rocket}
           description={
-            'Take control of your workflow step-by-step with smart tools, actionable insights, and seamless collaboration'
+            'Go from blank canvas to fully branded AI experience in four quick steps—pick a blueprint, add questions and data, brand & automate, then publish and track.'
           }
         />
       </div>
@@ -156,7 +157,7 @@ const TimelineItem = ({
                 width={400}
                 height={500}
                 alt={image.alt}
-                className="m-2 rounded-md object-contain shadow-md lg:rounded-xl lg:shadow-lg dark:invert"
+                className="mt-2 rounded-md object-contain shadow-md lg:rounded-xl lg:shadow-lg dark:invert"
               />
               <DiagonalPattern className="w-6 lg:w-10" />
             </div>
@@ -178,3 +179,51 @@ const TimelineItem = ({
     </div>
   </div>
 );
+
+interface SectionHeaderProps extends React.HTMLAttributes<HTMLDivElement> {
+  title: string;
+  icon: LucideIcon;
+  iconTitle: string;
+  description: React.ReactNode;
+}
+
+const SectionHeader = ({
+  className,
+  title,
+  icon: Icon,
+  iconTitle,
+  description,
+}: SectionHeaderProps) => {
+  return (
+    <div>
+      <div
+        className={cn(
+          'container flex flex-col items-center gap-6 border-x py-4 max-lg:border-x lg:flex-row lg:py-8',
+          className,
+        )}
+      >
+        {/* Left side - Title and Description */}
+        <div className="flex flex-1 flex-col gap-6">
+          <TitleTag title={iconTitle} icon={Icon} />
+          <h2 className="text-3xl leading-tight tracking-tight md:text-4xl lg:text-6xl">
+            {title}
+          </h2>
+          <p className="text-muted-foreground max-w-[600px] tracking-[-0.32px]">
+            {description}
+          </p>
+        </div>
+
+        {/* Right side - Image */}
+        <div className="flex-shrink-0">
+          <Image
+            src="/images/homepage/hexagon_launch.svg"
+            alt="logo"
+            width={500}
+            height={60}
+            className="dark:invert"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};

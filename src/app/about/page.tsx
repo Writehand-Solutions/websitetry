@@ -25,27 +25,18 @@ const METRICS = [
   },
 ];
 
+export const metadata = {
+  title: 'About Productised.ai | Empowering Experts with AI Productisation',
+  description: `Meet the team behind Productised.ai and learn
+how our mission, values, and technology help consultants,
+coaches, and agencies transform know-how into scalable AI
+products.`,
+};
+
 const page = () => {
   return (
     <div>
       <AboutHero />
-
-      <section className="container pb-14 md:pb-20 lg:pb-24">
-        <div className="flex flex-col justify-between gap-6 sm:flex-row">
-          {METRICS.map((metric, index) => (
-            <div key={index} className="flex flex-col">
-              <span className="text-primary text-[3.375rem] leading-[120%] tracking-[-2.8px]">
-                {metric.value}
-              </span>
-              <span className="text-muted-foreground mt-2 tracking-[-0.32px]">
-                {metric.label}
-              </span>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <Partners />
 
       <div className="py-14 md:py-20 lg:py-24">
         <Values />
@@ -53,10 +44,6 @@ const page = () => {
 
       <div className="py-14 md:py-20 lg:py-24">
         <Team />
-      </div>
-
-      <div className="py-14 md:py-20 lg:py-24">
-        <Testimonials withBorders={false} />
       </div>
     </div>
   );

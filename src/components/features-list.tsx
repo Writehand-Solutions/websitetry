@@ -12,25 +12,25 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const FEATURES_DATA = [
   {
-    title: 'Smart Task Management',
+    title: 'AI Funnels & Lead Magnets',
     description:
-      'Create, prioritize, and delegate tasks effortlessly. AI helps you identify what matters most with smart recommendations and automated workflows.',
+      'Guide users through dynamic journeys that qualify leads and deliver instant value.',
     icon: SquarePen,
-    image: '/images/homepage/features-1.png',
+    image: '/images/homepage/ai-leads.png',
   },
   {
-    title: 'Automated Scheduling',
+    title: 'Quizzes & Dynamic Surveys',
     description:
-      'Let AI find the best time slots for meetings, reminders, and tasks based on your calendar and working habits. Stay organized without the hassle.',
+      'Ask smarter questions, route with logic, and show personalised summaries every time.',
     icon: CalendarClock,
-    image: '/images/homepage/features-2.png',
+    image: '/images/homepage/quiz.png',
   },
   {
-    title: 'Personalized Insights',
+    title: 'AI Widgets (Dynamic AI Agents) ',
     description:
-      'Track your productivity with AI-powered insights. Get weekly summaries and actionable tips to improve your workflow and manage workloads better.',
+      'Customisable, dynamic, and highly personalised AI widgets that look modern, not a standard chatbot (coming soon). ',
     icon: ChartBar,
-    image: '/images/homepage/features-3.png',
+    image: '/images/homepage/product-suites.png',
   },
 ];
 
@@ -40,17 +40,17 @@ const FeaturesList = () => {
       defaultValue={FEATURES_DATA[0].title}
       className="flex items-center max-lg:flex-col lg:divide-x"
     >
-      <TabsList className="flex h-auto flex-1 flex-col bg-transparent p-0 max-lg:border-x lg:border-t">
+      <TabsList className="flex h-auto flex-1 flex-col items-start justify-center bg-transparent p-0 max-lg:border-x lg:border-t">
         {FEATURES_DATA.map((item) => (
           <TabsTrigger
             key={item.title}
             value={item.title}
-            className="group relative border-b px-1 py-5 text-start whitespace-normal data-[state=active]:shadow-none lg:px-8"
+            className="group relative w-full items-start justify-start border-b px-1 py-5 text-left whitespace-normal data-[state=active]:shadow-none lg:px-8"
           >
             <div
               className={`absolute bottom-[-1px] left-0 z-10 h-[1px] w-0 bg-gradient-to-r from-blue-600 via-sky-300 to-transparent transition-all duration-300 group-data-[state=active]:w-1/2`}
             />
-            <div className="">
+            <div className="w-full text-left">
               <div className="flex items-center gap-1.5">
                 <item.icon className="size-4" />
                 <h3 className="text-lg tracking-[-0.36px]">{item.title}</h3>

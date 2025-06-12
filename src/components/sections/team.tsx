@@ -9,41 +9,31 @@ import SectionHeader from '../section-header';
 
 const teamMembers = [
   {
-    name: 'Alex Johnson',
-    role: 'CEO & Founder',
-    image: '/images/team/1.png',
-    bio: 'With a background in software development and a vision for productivity, Alex leads the team with passion on user-first innovation.',
+    name: 'Sam Sutherland, MBA',
+    role: 'CEO & Co-Founder',
+    image: '/images/team/sam_pp.png',
+    bio: 'AI Productisation consultant, and chief overthinker at Productised.ai.',
     social: {
-      twitter: '#',
-      github: '#',
+      email: 'sam@productised.ai',
     },
   },
   {
-    name: 'Jamie Lee',
-    role: 'Chief Product Officer',
-    image: '/images/team/2.png',
-    bio: 'Jamie brings years of experience in product design and strategy, ensuring each feature meets the highest standards of functionality and design.',
+    name: 'Tinara Nathania',
+    role: 'CTO & Co-Founder',
+    image: '/images/team/tinara_pp.png',
+    bio: 'Leading the development and Innovation of the Productised platform.',
     social: {
-      twitter: '#',
+      email: 'tinara@productised.ai',
     },
   },
+
   {
-    name: 'Taylor Smith',
-    role: 'Head of Engineering',
-    image: '/images/team/3.png',
-    bio: 'Taylor drives the technical vision, overseeing development and ensuring the product is robust, secure, and scalable for users.',
+    name: 'Will Flannery',
+    role: 'COO & Co-Founder',
+    image: '/images/team/will_pp.png',
+    bio: 'Building scalable foundations and systems for productised.ai.',
     social: {
-      twitter: '#',
-      github: '#',
-    },
-  },
-  {
-    name: 'Morgan Davis',
-    role: 'Marketing Lead',
-    image: '/images/team/4.png',
-    bio: 'With a knack for storytelling and a deep understanding of the market, Morgan communicates our mission and product benefits to the world.',
-    social: {
-      twitter: '#',
+      email: 'will@productised.ai',
     },
   },
 ];
@@ -52,44 +42,38 @@ const Team = () => {
   return (
     <section className="">
       <SectionHeader
-        iconTitle="Team up!"
+        iconTitle="Leadership Team"
         title="The Minds Behind the Mission"
         icon={Users}
-        description="A dedicated team passionate about shaping the future of productivity."
+        description="Our dedicated leadership team passionate about shaping the future of AI Productisation."
         className={'border-none'}
       />
 
-      <div className="container mt-10 grid gap-x-12 gap-y-16 sm:grid-cols-2 md:mt-14 lg:grid-cols-4">
+      <div className="container mt-10 grid gap-x-16 gap-y-20 sm:grid-cols-2 md:mt-14 lg:grid-cols-3 xl:gap-x-20">
         {teamMembers.map((member) => (
           <div key={member.name} className="group flex flex-col">
             <Image
               src={member.image}
               alt={member.name}
-              width={80}
-              height={80}
+              width={120}
+              height={120}
               className="rounded-full object-contain"
             />
-            <div className="mt-6 flex flex-col tracking-[-0.32px]">
-              <h3 className="text-lg">{member.name}</h3>
-              <p className="text-muted-foreground-subtle">{member.role}</p>
-              <p className="text-muted-foreground mt-4 text-sm tracking-[-0.36px]">
+            <div className="mt-8 flex flex-col tracking-[-0.32px]">
+              <h3 className="text-xl font-medium">{member.name}</h3>
+              <p className="text-muted-foreground-subtle mt-1 text-base">
+                {member.role}
+              </p>
+              <p className="text-muted-foreground mt-6 text-base leading-relaxed tracking-[-0.36px]">
                 {member.bio}
               </p>
-              <div className="mt-6 flex gap-2">
-                {member.social.twitter && (
+              <div className="mt-8 flex gap-3">
+                {member.social.email && (
                   <Link
-                    href={member.social.twitter}
-                    className="hover:text-foreground"
+                    href={member.social.email}
+                    className="rounded-full transition-colors"
                   >
-                    <Twitter className="size-4" />
-                  </Link>
-                )}
-                {member.social.github && (
-                  <Link
-                    href={member.social.github}
-                    className="hover:text-foreground"
-                  >
-                    <Github className="size-4" />
+                    {member.social.email}
                   </Link>
                 )}
               </div>

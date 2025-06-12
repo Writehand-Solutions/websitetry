@@ -11,6 +11,7 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
+import Image from 'next/image';
 
 const contactMethods = [
   {
@@ -24,17 +25,17 @@ const contactMethods = [
     icon: Phone,
     title: 'Phone',
     description:
-      'Prefer to chat? Give us a call Monday–Friday, 9 AM–5 PM (PST).',
-    contact: '+1 (123) 456-7890',
+      'Prefer to chat? Give us on live chat Monday–Friday, 9 AM–5 PM (PST).',
+    // contact: '+1 (123) 456-7890',
   },
   {
     icon: Building,
     title: 'Office',
     description:
-      'Stop by our office @ 123 Productivity Ave, San Francisco, CA 94105',
+      'Stop by our office @ Suite 12, 130 St Georges Bay Road, Parnell, Auckland',
     contact: (
       <Link
-        href="#"
+        href="https://maps.app.goo.gl/bAyzfRJqA7pTAMr27"
         className="text-foreground inline-flex items-center gap-1 text-sm font-medium hover:underline"
       >
         Get Directions
@@ -107,20 +108,31 @@ const Contact = () => {
                 className="text-sm font-normal peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
               >
                 I accept the{' '}
-                <Link href="/terms" className="underline">
+                <Link href="/terms-of-service" className="underline">
                   Terms
                 </Link>
               </Label>
             </div>
           </div>
 
-          <Button type="submit">Submit</Button>
+          <Button type="submit" variant="productised">
+            Submit
+          </Button>
         </form>
-
-        <div className="grid flex-1 gap-6 self-start lg:grid-cols-2">
-          {contactMethods.map((method, index) => (
-            <ContactMethod key={index} {...method} />
-          ))}
+        <div className="grid flex-1">
+          {' '}
+          <div className="grid flex-1 gap-6 self-start lg:grid-cols-2">
+            {contactMethods.map((method, index) => (
+              <ContactMethod key={index} {...method} />
+            ))}
+          </div>
+          <Image
+            src="/images/homepage/hexagon_contact.svg"
+            alt="logo"
+            width={200}
+            height={60}
+            className="mt-4 dark:invert"
+          />
         </div>
       </div>
     </section>

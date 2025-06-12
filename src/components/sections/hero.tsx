@@ -16,11 +16,11 @@ export default function Hero() {
         </BorderedSection>
         <div className="container mx-auto pt-16 pb-12 text-center md:pt-20 lg:pt-28">
           <h1 className="mx-auto max-w-[500px] text-[2.5rem] leading-[1.2] tracking-[-1.6px] text-balance md:text-[4rem] md:!leading-[1.15] md:tracking-[-4.32px] lg:text-7xl">
-            Build AI Products, not Just Forms.
+            Build <span className="font-semibold">AI Products</span>, not Just Forms.
           </h1>
           <p className="text-muted-foreground mx-auto mt-5 max-w-[500px] leading-[1.5] tracking-[-0.32px] md:mt-6">
-            Prioritize, automate, and stay ahead—AI simplifies your tasks so you
-            can focus on what matters most.
+            Turn your expertise into branded, intelligent AI products that
+            deliver personalised value — at scale.
           </p>
           <Button asChild className="mt-6 gap-1 md:mt-8 lg:mt-10">
             <Link href="/dashboard">
@@ -46,9 +46,9 @@ export default function Hero() {
         <BorderedSection className="2xl:flex-1" />
         <div className={`container !pt-0 lg:!p-1.5`}>
           <Image
-            src="/images/homepage/hero.png"
+            src="/images/homepage/workflow-builder-hero.svg"
             alt="Hero"
-            className="mx-auto rounded-xl border object-contain p-1 shadow-lg 2xl:max-w-[1092px] dark:invert"
+            className="mx-auto rounded-xl border object-contain shadow-lg 2xl:max-w-[1092px] dark:invert"
             width={1000}
             height={600}
           />

@@ -7,14 +7,14 @@ import SectionHeader from '../section-header';
 
 const Optimize = () => {
   return (
-    <section id="optimized-scheduling" className="">
+    <section id="your-brand" className="">
       <div className="border-b">
         <SectionHeader
-          iconTitle="Optimize"
-          title="Optimize every aspect of your day"
+          iconTitle="Future-Proof your brand"
+          title="Your Product, Your Brand"
           icon={Eye}
           description={
-            'Achieve seamless productivity with intelligent scheduling, insightful analytics, and effortless integrations.'
+            'Keep every pixel on-brand with custom styling, drag-and-drop layouts, and smart templates.'
           }
         />
       </div>

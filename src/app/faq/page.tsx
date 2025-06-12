@@ -4,18 +4,17 @@ import Faq from '@/components/sections/faq';
 import Testimonials from '@/components/sections/testimonials';
 
 export const metadata = {
-  title: 'FAQ - Your Questions Answered',
-  description:
-    'Find answers to commonly asked questions about our platform and services.',
+  title: 'FAQ | Productised.ai Answers on Credits, API Keys & Security',
+  description: `Find quick answers about AI credits, API key
+usage, integrations, plan limits, and data security—everything you
+need to know before launching your first AI product with
+Productised.ai.`,
 };
 
 const FaqPage = () => {
   return (
     <div className="py-14 md:py-20 lg:py-24">
       <Faq withBorders={false} />
-      <div className="py-14 md:py-20 lg:py-24">
-        <Testimonials withBorders={false} />
-      </div>
     </div>
   );
 };

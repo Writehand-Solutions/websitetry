@@ -1,26 +1,32 @@
+import { Linkedin, Youtube } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-
-import { Instagram, Twitter, Linkedin } from 'lucide-react';
 
 const sections = [
   {
     title: 'Product',
     links: [
-      { name: 'Features', href: '#' },
-      { name: 'Pricing', href: '#' },
+      { name: 'Knowledgebase', href: 'https://knowledgebase.productised.ai/' },
+      { name: 'Roadmap', href: 'https://roadmap.productised.ai/' },
+      { name: 'Pricing', href: '/pricing' },
     ],
   },
   {
     title: 'Company',
     links: [
       { name: 'Contact', href: '/contact' },
-      { name: 'Faq', href: '#' },
+      { name: 'Faq', href: '/faq' },
     ],
   },
   {
     title: 'Legal',
-    links: [{ name: 'Terms of Service', href: '/terms-of-service' }],
+    links: [
+      { name: 'Terms of Service', href: '/terms-of-service' },
+      {
+        name: 'Privacy Policy',
+        href: 'https://products.privasee.io/privacy-center/632d95ef5e7d2500133b97d6',
+      },
+    ],
   },
 ];
 
@@ -31,13 +37,19 @@ const Footer = () => {
         <div className="mb-8 flex-1">
           <Link href="/" className="flex items-center gap-1">
             <Image
+              src="/images/icon.png"
+              alt="icon"
+              width={32}
+              height={32}
+              className="pr-1 dark:invert"
+            />
+            <Image
               src="/images/logo.svg"
               alt="logo"
-              width={32}
+              width={100}
               height={32}
               className="dark:invert"
             />
-            <span className="text-2xl leading-0 font-semibold">Relative</span>
           </Link>
         </div>
         <div className="flex flex-1 justify-between gap-8 max-sm:flex-col">
@@ -62,13 +74,16 @@ const Footer = () => {
             </h3>
 
             <div className="text-muted-foreground-subtle mt-6 flex gap-3 lg:mt-8">
-              <Link href="https://instagram.com" aria-label="Instagram">
-                <Instagram size={20} />
+              <Link
+                href="https://www.youtube.com/@ProductisedAI"
+                aria-label="Instagram"
+              >
+                <Youtube size={20} />
               </Link>
-              <Link href="https://twitter.com" aria-label="Twitter">
-                <Twitter size={20} />
-              </Link>
-              <Link href="https://Linkedin.com" aria-label="Linkedin">
+              <Link
+                href="https://www.linkedin.com/company/productised-ai/"
+                aria-label="Linkedin"
+              >
                 <Linkedin size={20} />
               </Link>
             </div>
@@ -76,7 +91,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-muted-foreground-subtle container border-x border-t border-b py-4 text-sm tracking-[-0.28px] lg:py-8">
-        <p>© {new Date().getFullYear()} Relative. All rights reserved.</p>
+        <p>
+          © {new Date().getFullYear()} Productised.ai. All rights reserved.
+        </p>
       </div>
       <div className="container h-6 border-x"></div>
     </footer>

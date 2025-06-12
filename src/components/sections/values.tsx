@@ -6,21 +6,21 @@ import SectionHeader from '../section-header';
 
 const values = [
   {
-    title: 'User-Centered Design',
+    title: 'Community Over Competition ',
     description:
-      'We prioritize the user experience, ensuring every feature adds real value and is intuitive to use.',
+      'We grow by learning together. Templates, tutorials, and community help every user level-up and share wins.',
     icon: UserCog,
   },
   {
     title: 'Continuous Innovation',
     description:
-      'We are committed to pushing boundaries, and evolving to meet the needs of modern teams.',
+      'AI moves fast—so do we. Weekly releases, open roadmaps, and customer-led iterations keep us ahead.',
     icon: Lightbulb,
   },
   {
     title: 'Integrity and Transparency',
     description:
-      'We build with honesty and clarity, fostering trust with our users and partners.',
+      'Clear pricing, no hidden fees, and honest data practices. Your trust is worth more than any feature.',
     icon: Shield,
   },
 ];

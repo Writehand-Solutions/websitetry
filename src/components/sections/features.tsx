@@ -7,14 +7,14 @@ import SectionHeader from '../section-header';
 
 const Features = () => {
   return (
-    <section id="smart-productivity" className="pt-12 lg:pt-20">
+    <section id="ai-productisation" className="pt-12 lg:pt-20">
       <div className="border-y">
         <SectionHeader
-          iconTitle="Features"
-          title="Smart productivity with AI"
+          iconTitle="Introducing AI Productisation"
+          title="Productised Delivery, Powered by AI"
           icon={PocketKnife}
           description={
-            'Unlock smarter productivity with features that help you manage tasks, time, and focus—seamlessly.'
+            'Launch expert-grade AI products that attract, engage, and convert — all in one seamless flow.'
           }
         />
       </div>
