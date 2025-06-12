@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { Users, Twitter, Github } from 'lucide-react';
+import { Users } from 'lucide-react';
 
 import SectionHeader from '../section-header';
 

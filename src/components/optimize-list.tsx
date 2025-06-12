@@ -5,8 +5,6 @@ import Image from 'next/image';
 
 import { CircleHelp, Volume2, Lightbulb } from 'lucide-react';
 
-import DiagonalPattern from './diagonal-pattern';
-
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { cn } from '@/lib/utils';
 

@@ -1,29 +1,8 @@
 import React from 'react';
 
 import AboutHero from '@/components/sections/about-hero';
-import Partners from '@/components/sections/partners';
 import Team from '@/components/sections/team';
-import Testimonials from '@/components/sections/testimonials';
 import Values from '@/components/sections/values';
-
-const METRICS = [
-  {
-    value: '500+',
-    label: 'Active users',
-  },
-  {
-    value: '99.9%',
-    label: 'Uptime for productivity',
-  },
-  {
-    value: '20+',
-    label: 'Industry awards',
-  },
-  {
-    value: '100+',
-    label: 'Integrations',
-  },
-];
 
 export const metadata = {
   title: 'About Productised.ai | Empowering Experts with AI Productisation',

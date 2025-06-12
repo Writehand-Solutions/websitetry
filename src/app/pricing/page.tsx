@@ -2,7 +2,6 @@ import React from 'react';
 
 import Faq from '@/components/sections/faq';
 import Pricing from '@/components/sections/pricing';
-import Testimonials from '@/components/sections/testimonials';
 
 export const metadata = {
   title: 'Pricing | Productised.ai Plans for Experts, Teams & Agencies',

@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Faq from '@/components/sections/faq';
-import Testimonials from '@/components/sections/testimonials';
 
 export const metadata = {
   title: 'FAQ | Productised.ai Answers on Credits, API Keys & Security',

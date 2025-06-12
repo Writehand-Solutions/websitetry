@@ -13,6 +13,7 @@ import {
 
 import DiagonalPattern from '../diagonal-pattern';
 import TitleTag from '../title-tag';
+
 import { cn } from '@/lib/utils';
 
 const TIMELINE_ITEMS = [

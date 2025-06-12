@@ -1,10 +1,13 @@
 import React from 'react';
-import { Shapes } from 'lucide-react';
+
+import Image from 'next/image';
+
+import { Shapes, LucideIcon } from 'lucide-react';
+
 import AdaptiveList from '../adaptive-list';
-import { LucideIcon } from 'lucide-react';
+
 import TitleTag from '@/components/title-tag';
 import { cn } from '@/lib/utils';
-import Image from 'next/image';
 
 const Adaptive = () => {
   return (
