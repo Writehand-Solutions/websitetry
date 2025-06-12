@@ -26,7 +26,7 @@ const contactMethods = [
     title: 'Phone',
     description:
       'Prefer to chat? Give us on live chat Monday–Friday, 9 AM–5 PM (PST).',
-    // contact: '+1 (123) 456-7890',
+    contact: '+1 (123) 456-7890',
   },
   {
     icon: Building,
