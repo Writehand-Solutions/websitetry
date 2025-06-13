@@ -17,6 +17,7 @@ const sections = [
     links: [
       { name: 'Contact', href: '/contact' },
       { name: 'Faq', href: '/faq' },
+      { name: 'Blog', href: 'https://blog.productised.ai/' },
     ],
   },
   {
