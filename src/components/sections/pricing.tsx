@@ -96,32 +96,32 @@ const comparisonFeatures: FeatureSection[] = [
     features: [
       {
         name: 'AI Credits',
-        basic: '10',
-        business: '25',
-        enterprise: 'Unlimited',
+        basic: '1000',
+        business: '1500',
+        enterprise: '2000',
       },
       {
         name: 'AI Product Builder Credits',
-        basic: true,
-        business: true,
-        enterprise: true,
+        basic: '500',
+        business: '750',
+        enterprise: '1000',
       },
       {
         name: 'AI Conversations',
-        basic: true,
-        business: true,
-        enterprise: true,
+        basic: '250',
+        business: '500',
+        enterprise: '750',
       },
       {
         name: 'API Key Option',
-        basic: false,
+        basic: true,
         business: true,
         enterprise: true,
       },
       {
         name: 'Custom Domains and Branding',
-        basic: false,
-        business: false,
+        basic: true,
+        business: true,
         enterprise: true,
       },
     ],
@@ -131,9 +131,9 @@ const comparisonFeatures: FeatureSection[] = [
     features: [
       {
         name: 'Conversations',
-        basic: '10 25 Unlimited',
-        business: '10 25 Unlimited',
-        enterprise: '10 25 Unlimited',
+        basic: '250',
+        business: '500',
+        enterprise: '750',
       },
       {
         name: 'AI Widgets',
@@ -154,9 +154,9 @@ const comparisonFeatures: FeatureSection[] = [
     features: [
       {
         name: 'Unlimited Landing Pages',
-        basic: '10',
-        business: '25',
-        enterprise: 'Unlimited',
+        basic: true,
+        business: true,
+        enterprise: true,
       },
       {
         name: 'Unlimited Forms',
@@ -172,14 +172,14 @@ const comparisonFeatures: FeatureSection[] = [
       },
       {
         name: 'Webhooks',
-        basic: false,
+        basic: true,
         business: true,
         enterprise: true,
       },
       {
         name: 'Integrations (Soon)',
         basic: false,
-        business: false,
+        business: true,
         enterprise: true,
       },
     ],
