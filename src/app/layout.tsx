@@ -6,6 +6,8 @@ import './globals.css';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/sections/footer';
 import { ThemeProvider } from '@/components/theme-provider';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -90,18 +92,6 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         {/* HEAD SCRIPTS - These will be in the <head> */}
-        {/* ClickRank AI script */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              var clickRankAi = document.createElement("script");
-              clickRankAi.src = "https://js.clickrank.ai/seo/98a13b7f-2a54-4fd6-a070-b5bedf2cc9a9/script?" + new Date().getTime();
-              clickRankAi.async = true;
-              document.head.appendChild(clickRankAi);
-            `,
-          }}
-        />
-
         {/* Gist tracking script */}
         <script
           dangerouslySetInnerHTML={{
@@ -236,10 +226,24 @@ export default function RootLayout({
         >
           <Navbar />
           {children}
+          <Analytics />
+          <SpeedInsights />
           <Footer />
         </ThemeProvider>
 
         {/* BODY SCRIPTS - These will be at the end of <body> */}
+        {/* ClickRank AI analytics script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              var clickRankAi = document.createElement("script");
+              clickRankAi.src = "https://js.clickrank.ai/seo/98a13b7f-2a54-4fd6-a070-b5bedf2cc9a9/script?" + new Date().getTime();
+              clickRankAi.async = true;
+              document.head.appendChild(clickRankAi);
+            `,
+          }}
+        />
+
         <script defer src="https://roadmap.productised.ai/widgets_sdk"></script>
         <script
           dangerouslySetInnerHTML={{
