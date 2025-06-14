@@ -2,12 +2,13 @@ import localFont from 'next/font/local';
 
 import type { Metadata } from 'next';
 
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 import './globals.css';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/sections/footer';
 import { ThemeProvider } from '@/components/theme-provider';
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
