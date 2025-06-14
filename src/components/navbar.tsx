@@ -66,6 +66,19 @@ const Navbar = () => {
 
   return (
     <header className="relative z-50 border-b backdrop-blur-sm">
+      {/* Beta Banner */}
+      <div className="bg-gradient-to-r from-blue-600 to-purple-600 px-4 py-2 text-center text-sm text-white">
+        <span className="font-medium">🚀 We're in Beta!</span>
+        <span className="mx-2">|</span>
+        <span>Coming soon - </span>
+        <Link
+          href="/contact"
+          className="font-medium underline hover:no-underline"
+        >
+          Get early access
+        </Link>
+      </div>
+
       <div className="container">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -137,25 +150,19 @@ const Navbar = () => {
             </NavigationMenuList>
           </NavigationMenu>
 
-          {/* Auth Buttons */}
+          {/* Auth Buttons - Replaced with Beta CTA */}
           <div className="flex items-center gap-2.5">
             <div
               className={`transition-opacity duration-300 ${isMenuOpen ? 'pointer-events-none opacity-0' : 'opacity-100'}`}
             >
               <ThemeToggle />
             </div>
-            <Link href="/login" className="hidden lg:block">
-              <Button variant="outline" className="gap-1">
-                Login
-                <ChevronRight className="size-4" />
-              </Button>
-            </Link>
             <Link
-              href="/signup"
+              href="/contact"
               className={`transition-opacity duration-300 ${isMenuOpen ? 'pointer-events-none opacity-0' : 'opacity-100'}`}
             >
               <Button className="gap-1">
-                Sign up
+                Get Early Access
                 <ChevronRight className="size-4" />
               </Button>
             </Link>
@@ -195,21 +202,12 @@ const Navbar = () => {
       >
         <div className="mt-8 space-y-2">
           <Link
-            href="/signup"
+            href="/contact"
             className="block"
             onClick={() => setIsMenuOpen(false)}
           >
             <Button size="sm" className="w-full">
-              Sign up
-            </Button>
-          </Link>
-          <Link
-            href="/login"
-            className="block"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            <Button size="sm" className="w-full" variant="outline">
-              Login
+              Get Early Access
             </Button>
           </Link>
         </div>

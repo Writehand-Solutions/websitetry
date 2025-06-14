@@ -90,6 +90,18 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         {/* HEAD SCRIPTS - These will be in the <head> */}
+        {/* ClickRank AI script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              var clickRankAi = document.createElement("script");
+              clickRankAi.src = "https://js.clickrank.ai/seo/98a13b7f-2a54-4fd6-a070-b5bedf2cc9a9/script?" + new Date().getTime();
+              clickRankAi.async = true;
+              document.head.appendChild(clickRankAi);
+            `,
+          }}
+        />
+
         {/* Gist tracking script */}
         <script
           dangerouslySetInnerHTML={{
