@@ -28,9 +28,9 @@ const TIMELINE_ITEMS = [
     },
   },
   {
-    title: 'Add Questions & Data, Then Connect to AI',
+    title: 'Capture Expertise. Feed the AI.',
     description:
-      'Write the client-facing questions, then upload any supporting materials (PDFs, spreadsheets, links). Every input helps the AI reflect your unique expertise.',
+      'Ask the right questions, upload key materials, and let AI tailor responses that reflect your real-world process.',
     icon: LocateFixed,
     image: {
       src: '/images/homepage/openai_launch.svg',
