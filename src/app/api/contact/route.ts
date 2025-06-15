@@ -1,7 +1,13 @@
 import { Client } from 'postmark';
 import { NextRequest } from 'next/server';
 
-const client = new Client(process.env.POSTMARK_SERVER_TOKEN);
+// Validate environment variable exists
+const postmarkToken = process.env.POSTMARK_SERVER_TOKEN;
+if (!postmarkToken) {
+  throw new Error('POSTMARK_SERVER_TOKEN environment variable is required');
+}
+
+const client = new Client(postmarkToken);
 
 interface ContactFormData {
   name: string;
