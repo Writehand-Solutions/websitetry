@@ -21,23 +21,23 @@ const faqData = [
     question:
       'How is Productised.ai different from a normal form, funnel or chatbot?',
     answer: `1. It turns answers into instant value.
+    
 Forms and bots just stash information. Productised.ai runs the answers through AI and returns a personalised action plan on a fully-branded page—right away.
 
 2. It sorts your visitors for you.
+
 The same AI pin-points who is ready to buy, who needs nurturing, and what each person cares about most, so you can follow up with the right message instead of a generic blast.
 
 3. The tool itself becomes an offer.
-Because the AI output is useful on its own, you can place it behind an email wall or even charge for access. In other words, the interactive tool is a mini product, not just a data-grab.
 
-Think of it this way:
-● Form/Funnel/Chatbot = "Tell me about you."
-● Productised.ai = "Tell me about you → Here's a personalised plan → Now you (and I) know the best next move."`,
+Because the AI output is useful on its own, you can place it behind an email wall or even charge for access.`,
   },
   {
     question: 'What is an "AI credit"?',
     answer: `Think of an AI credit as a token pack. About 750 tokens (the text the AI reads and writes) equals one credit. A short reply usually costs one credit; big, detailed replies may use two or more.
 
 Credit Type | What it powers | Starter Example
+
 AI Credits | Regular AI workflows (your questions + AI answers) | 1,000 starter credits
 AI Product Builder Credits | The special AI steps inside the drag-and-drop Builder | 500 starter credits
 AI Conversations | Chat-style widgets you embed for customers | 250 starter chats
@@ -51,19 +51,12 @@ Each higher plan bumps these numbers up.`,
   },
   {
     question: 'What does "unlimited AI usage with my own API key" mean?',
-    answer: `If you paste in your personal OpenAI key, we stop counting or charging Productised credits. You pay OpenAI directly, so you can run as many prompts as your OpenAI account allows. All plans—Starter, Pro, Pro+, and Agency—support this option.
-
-Do I still have limits when I use my own key?
-A few small ones:
-1. OpenAI's speed limits (how many calls per minute) now apply to you.
-2. Plan features—like how many live products or workspaces you get—stay the same.
-3. Fair-use rules—we block spam or unsafe content to protect everyone.
-
-We never store your raw key; it's encrypted and only used for your prompts.`,
+    answer: `If you paste in your personal OpenAI key, we stop counting or charging Productised credits. You pay OpenAI directly, so you can run as many prompts as your OpenAI account allows.`,
   },
   {
     question: 'Do I still have limits when I use my own key?',
     answer: `A few small ones:
+    
 1. OpenAI's speed limits (how many calls per minute) now apply to you.
 2. Plan features—like how many live products or workspaces you get—stay the same.
 3. Fair-use rules—we block spam or unsafe content to protect everyone.
