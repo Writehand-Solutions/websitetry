@@ -20,8 +20,8 @@ export default function Hero() {
             Forms.
           </h1>
           <p className="text-muted-foreground mx-auto mt-5 max-w-[500px] leading-[1.5] tracking-[-0.32px] md:mt-6">
-            Turn your expertise into branded, intelligent AI products that
-            deliver personalised value — at scale.
+            Go beyond lead capture — create branded, intelligent experiences 
+            that give back more than they take.
           </p>
           <Button asChild className="mt-6 gap-1 md:mt-8 lg:mt-10">
             <Link href="/dashboard">
