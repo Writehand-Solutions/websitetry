@@ -4,11 +4,19 @@ import Link from 'next/link';
 import { Linkedin, Youtube } from 'lucide-react';
 
 const sections = [
-  {
-    title: 'Product',
+    {
+    title: 'Resources',
     links: [
       { name: 'Knowledgebase', href: 'https://knowledgebase.productised.ai/' },
       { name: 'Roadmap', href: 'https://roadmap.productised.ai/' },
+      { name: 'Blog', href: 'https://blog.productised.ai/' },
+    ],
+  },
+  {
+    title: 'Product',
+    links: [
+      { name: 'Join Beta', href: '/contact' },
+      { name: 'AI Productisation', href: '/#ai-productisation' },
       { name: 'Pricing', href: '/pricing' },
     ],
   },
@@ -17,7 +25,7 @@ const sections = [
     links: [
       { name: 'Contact', href: '/contact' },
       { name: 'Faq', href: '/faq' },
-      { name: 'Blog', href: 'https://blog.productised.ai/' },
+      { name: 'About', href: '/about' },
     ],
   },
   {
