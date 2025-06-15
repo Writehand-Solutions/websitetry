@@ -14,9 +14,11 @@ const AboutHero = () => {
                 Empowering Experts with AI Productisation
               </h1>
               <p className="text-muted-foreground mt-6 tracking-[-0.32px]">
-                Our mission is to put powerful, no-code AI tools in the hands of
-                every expert, coach, and agency—so they can turn knowledge into
-                scalable products and help more people.
+                At Productised.ai, we’re on a mission to equip coaches, consultants, and agencies 
+                with no-code AI tools that turn their proprietary knowledge into scalable products. 
+                By democratising sophisticated AI workflows, we enable professionals to automate 
+                expertise delivery, reach more clients, and focus on impact—without wrestling 
+                with complex code or infrastructure.
               </p>
             </div>
             <div className="relative mt-10 aspect-[3/3.25] overflow-hidden md:mt-14 lg:mr-8 lg:mb-10 lg:ml-2">
@@ -52,9 +54,13 @@ const AboutHero = () => {
               </div>
             </div>
             <p className="text-muted-foreground mt-10 px-4 tracking-[-0.32px] md:mt-14">
-              We believe the future of work is expert-led and AI-powered.
-              Productised.ai exists to bridge that gap, giving professionals the
-              super-powers they need to deliver personalised value at scale.
+              For over two decades, forms have quietly powered digital data capture—styled up by every vendor 
+              but still locked into fixed questions and one-size-fits-all outcomes. AI Productisation™ breaks 
+              that mold by weaving your expertise into every interaction: fields become smart prompts, 
+              logic adapts in real time, and each response delivers tailored insights on the fly. 
+              With Productised.ai, you’re not just collecting data—you’re launching dynamic AI products 
+              that scale your knowledge and keep your brand voice unmistakably front and center.
+
             </p>
           </div>
         </div>
