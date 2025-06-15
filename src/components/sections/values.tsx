@@ -6,21 +6,26 @@ import SectionHeader from '../section-header';
 
 const values = [
   {
-    title: 'Community Over Competition ',
+    title: 'Smarter Than Forms ',
     description:
-      'We grow by learning together. Templates, tutorials, and community help every user level-up and share wins.',
+      'Forms have been around for 20+ years—getting prettier but still static. With AI Productisation™, 
+      we’ve turned those fields into dynamic, intelligent workflows that adapt, engage, and deliver value in real time.',
     icon: UserCog,
   },
   {
-    title: 'Continuous Innovation',
+    title: 'Built for Modern Delivery',
     description:
-      'AI moves fast—so do we. Weekly releases, open roadmaps, and customer-led iterations keep us ahead.',
+      'The way people share knowledge is changing. Static PDFs and generic forms no longer cut it. We’re building 
+      tools for a new kind of expert—those who want to deliver value instantly, interactively, and at scale. 
+  Productised makes that possible without needing a dev team or technical background.',
     icon: Lightbulb,
   },
   {
-    title: 'Integrity and Transparency',
+    title: 'Designed to Stay Out of Your Way',
     description:
-      'Clear pricing, no hidden fees, and honest data practices. Your trust is worth more than any feature.',
+      'You shouldn’t have to learn a new system just to ship your ideas. We focus on building 
+      tools that feel intuitive from the start—so you can go from concept to live AI product without 
+  friction, complexity, or unnecessary steps.',
     icon: Shield,
   },
 ];
@@ -30,9 +35,9 @@ const Values = () => {
     <section>
       <SectionHeader
         iconTitle="We live by"
-        title="Our Core Values"
+        title="What Guides Us"
         icon={Heart}
-        description="We believe in principles that guide our growth and inspire our community."
+        description="Our approach is shaped by the realities of modern work, not outdated systems."
         className="border-none"
       />
 
