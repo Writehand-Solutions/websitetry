@@ -56,7 +56,7 @@ const pricingPlans: PricingPlan[] = [
   },
   {
     icon: Briefcase,
-    name: 'Business plan',
+    name: 'Pro plan',
     price: {
       monthly: 59,
       yearly: 566,
@@ -73,7 +73,7 @@ const pricingPlans: PricingPlan[] = [
   },
   {
     icon: Building,
-    name: 'Enterprise plan',
+    name: 'Pro+ plan',
     price: {
       monthly: 99,
       yearly: 950,
