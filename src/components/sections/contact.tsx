@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, FormEvent } from 'react';
+
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -126,7 +127,6 @@ const Contact: React.FC = () => {
         type: 'error',
         message: 'Network error. Please try again.',
       });
-      console.error('Network error:', error);
     } finally {
       setIsSubmitting(false);
     }

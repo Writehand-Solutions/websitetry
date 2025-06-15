@@ -1,5 +1,6 @@
-import { Client } from 'postmark';
 import { NextRequest } from 'next/server';
+
+import { Client } from 'postmark';
 
 // Validate environment variable exists
 const postmarkToken = process.env.POSTMARK_SERVER_TOKEN;
@@ -91,8 +92,6 @@ export async function POST(request: NextRequest) {
       messageId: result.MessageID,
     });
   } catch (error) {
-    console.error('Postmark error:', error);
-
     // Handle specific Postmark errors with proper typing
     if (error instanceof Error && 'code' in error && error.code === 422) {
       return Response.json({ error: 'Invalid email format' }, { status: 400 });
