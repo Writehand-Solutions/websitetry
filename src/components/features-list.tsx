@@ -30,7 +30,7 @@ const FEATURES_DATA = [
     description:
       'Customisable, dynamic, and highly personalised AI widgets that look modern, not a standard chatbot (coming soon). ',
     icon: ChartBar,
-    image: '/images/homepage/product-suites.png',
+    image: '/images/homepage/ai_widget.png',
   },
 ];
 

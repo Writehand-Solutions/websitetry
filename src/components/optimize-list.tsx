@@ -21,7 +21,7 @@ const OPTIMIZE_DATA = [
     description:
       'Assemble forms, quizzes, and output pages with intuitive blocks—no coding required.',
     icon: Volume2,
-    image: '/images/homepage/workflow-builder.png',
+    image: '/images/homepage/workflow-builder-hero.svg',
   },
   {
     title: 'Easy Deployment',
@@ -78,9 +78,9 @@ const OptimizeList = () => {
             <Image
               src={item.image}
               alt={item.title}
-              width={1312}
-              height={743.926}
-              className="h-auto w-full object-contain shadow-md lg:shadow-lg dark:invert"
+              width={1200}
+              height={700}
+              className="p-3 h-auto w-full object-contain shadow-md lg:shadow-lg dark:invert"
             />
           </div>
         </TabsContent>

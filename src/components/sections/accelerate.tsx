@@ -217,9 +217,9 @@ const SectionHeader = ({
         {/* Right side - Image */}
         <div className="flex-shrink-0">
           <Image
-            src="/images/homepage/hexagon_launch.svg"
+            src="/images/homepage/box_launch.png"
             alt="logo"
-            width={500}
+            width={300}
             height={60}
             className="dark:invert"
           />
