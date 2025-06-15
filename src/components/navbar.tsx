@@ -151,27 +151,28 @@ const Navbar = () => {
           </NavigationMenu>
 
           {/* Auth Buttons - Login + Beta CTA */}
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-1 lg:gap-2.5">
+            {/* Theme Toggle - Desktop Only */}
             <div
-              className={`transition-opacity duration-300 ${isMenuOpen ? 'pointer-events-none opacity-0' : 'opacity-100'}`}
+              className={`hidden transition-opacity duration-300 lg:block ${isMenuOpen ? 'pointer-events-none opacity-0' : 'opacity-100'}`}
             >
               <ThemeToggle />
             </div>
-            
-            {/* Login Link */}
+
+            {/* Login Link - Desktop Only */}
             <Link
               href="https://app.productised.ai/login"
-              className={`transition-opacity duration-300 ${isMenuOpen ? 'pointer-events-none opacity-0' : 'opacity-100'}`}
+              className={`hidden transition-opacity duration-300 lg:block ${isMenuOpen ? 'pointer-events-none opacity-0' : 'opacity-100'}`}
             >
               <Button variant="outline" className="text-primary">
                 Login
               </Button>
             </Link>
-            
-            {/* Get Early Access CTA */}
+
+            {/* Get Early Access CTA - Desktop Only */}
             <Link
               href="/contact"
-              className={`transition-opacity duration-300 ${isMenuOpen ? 'pointer-events-none opacity-0' : 'opacity-100'}`}
+              className={`hidden transition-opacity duration-300 lg:block ${isMenuOpen ? 'pointer-events-none opacity-0' : 'opacity-100'}`}
             >
               <Button className="gap-1">
                 Get Early Access
@@ -212,7 +213,10 @@ const Navbar = () => {
             : 'invisible translate-x-full opacity-0'
         }`}
       >
-        <div className="mt-8 space-y-2">
+        <div className="my-8 space-y-2">
+          <div className="mb-4 flex justify-center lg:hidden">
+            <ThemeToggle />
+          </div>
           <Link
             href="https://app.productised.ai/login"
             className="block"

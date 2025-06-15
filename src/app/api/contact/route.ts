@@ -38,7 +38,7 @@ export async function POST(request: NextRequest) {
     // Send email via Postmark
     const result = await client.sendEmail({
       From: 'support@productised.ai',
-      To: 'support@productised.ai',
+      To: 'hello@productised.ai, support@productised.ai',
       Subject: `New Contact Form Submission from ${name}`,
       HtmlBody: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
