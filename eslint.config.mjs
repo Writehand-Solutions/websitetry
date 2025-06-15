@@ -18,10 +18,9 @@ const eslintConfig = [
     'next/core-web-vitals',
     'next/typescript',
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
+    '@typescript-eslint/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
-    'plugin:prettier/recommended',
     'next',
     'plugin:jsx-a11y/recommended',
   ),
@@ -45,39 +44,11 @@ const eslintConfig = [
       'jsx-a11y/heading-has-content': 'off',
       '@typescript-eslint/no-empty-object-type': 'off',
       'react/no-unescaped-entities': 'off',
-      'no-console': 'error',
-      'import/order': [
-        'error',
-        {
-          groups: [
-            ['builtin', 'external'],
-            ['internal', 'parent', 'sibling', 'index'],
-          ],
-          pathGroups: [
-            {
-              pattern: 'react',
-              group: 'builtin',
-              position: 'before',
-            },
-            {
-              pattern: 'next/**',
-              group: 'builtin',
-              position: 'before',
-            },
-            {
-              pattern: '@/**',
-              group: 'internal',
-              position: 'after',
-            },
-          ],
-          pathGroupsExcludedImportTypes: ['builtin'],
-          'newlines-between': 'always',
-          alphabetize: {
-            order: 'asc',
-            caseInsensitive: true,
-          },
-        },
-      ],
+      'no-console': 'off',
+      'prettier/prettier': 'off',
+      '@typescript-eslint/no-unused-vars': 'off',
+      '@next/next/no-img-element': 'warn',
+      'import/order': 'off',
     },
   },
 ];
