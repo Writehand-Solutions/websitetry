@@ -150,13 +150,25 @@ const Navbar = () => {
             </NavigationMenuList>
           </NavigationMenu>
 
-          {/* Auth Buttons - Replaced with Beta CTA */}
+          {/* Auth Buttons - Login + Beta CTA */}
           <div className="flex items-center gap-2.5">
             <div
               className={`transition-opacity duration-300 ${isMenuOpen ? 'pointer-events-none opacity-0' : 'opacity-100'}`}
             >
               <ThemeToggle />
             </div>
+            
+            {/* Login Link */}
+            <Link
+              href="https://app.productised.ai/login"
+              className={`transition-opacity duration-300 ${isMenuOpen ? 'pointer-events-none opacity-0' : 'opacity-100'}`}
+            >
+              <Button variant="outline" className="text-primary">
+                Login
+              </Button>
+            </Link>
+            
+            {/* Get Early Access CTA */}
             <Link
               href="/contact"
               className={`transition-opacity duration-300 ${isMenuOpen ? 'pointer-events-none opacity-0' : 'opacity-100'}`}
@@ -201,6 +213,15 @@ const Navbar = () => {
         }`}
       >
         <div className="mt-8 space-y-2">
+          <Link
+            href="https://app.productised.ai/login"
+            className="block"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <Button variant="outline" size="sm" className="w-full">
+              Login
+            </Button>
+          </Link>
           <Link
             href="/contact"
             className="block"
