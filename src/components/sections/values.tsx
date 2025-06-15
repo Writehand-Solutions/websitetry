@@ -7,25 +7,22 @@ import SectionHeader from '../section-header';
 const values = [
   {
     title: 'Smarter Than Forms ',
-    description:
-      'Forms have been around for 20+ years—getting prettier but still static. With AI Productisation™, 
-      we’ve turned those fields into dynamic, intelligent workflows that adapt, engage, and deliver value in real time.',
+    description: `Forms have been around for 20+ years—getting prettier but still static. With AI Productisation™, 
+      we’ve turned those fields into dynamic, intelligent workflows that adapt, engage, and deliver value in real time.`,
     icon: UserCog,
   },
   {
     title: 'Built for Modern Delivery',
-    description:
-      'The way people share knowledge is changing. Static PDFs and generic forms no longer cut it. We’re building 
+    description: `The way people share knowledge is changing. Static PDFs and generic forms no longer cut it. We’re building 
       tools for a new kind of expert—those who want to deliver value instantly, interactively, and at scale. 
-  Productised makes that possible without needing a dev team or technical background.',
+  Productised makes that possible without needing a dev team or technical background.`,
     icon: Lightbulb,
   },
   {
     title: 'Designed to Stay Out of Your Way',
-    description:
-      'You shouldn’t have to learn a new system just to ship your ideas. We focus on building 
+    description: `You shouldn’t have to learn a new system just to ship your ideas. We focus on building 
       tools that feel intuitive from the start—so you can go from concept to live AI product without 
-  friction, complexity, or unnecessary steps.',
+  friction, complexity, or unnecessary steps.`,
     icon: Shield,
   },
 ];
